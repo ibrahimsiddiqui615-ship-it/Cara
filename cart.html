@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Browser compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Cara | Cart</title>
+
+    <!-- Website icon -->
+    <link rel="icon" type="image/x-icon" href="./img/icon1.png">
+
+    <!-- Boxicons for icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER / NAVBAR ================= -->
+    <section id="header">
+        <!-- Logo -->
+        <a href="#"><img src="img/logo.png" class="logo" alt="Logo"></a>
+
+        <!-- Desktop navigation menu -->
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+                <!-- Cart icon with cart count -->
+                <li id="lg-bag">
+                    <a class="active" href="cart.html">
+                        <i class='bx bx-shopping-bag'></i>
+                        <!-- Cart quantity number -->
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+
+                <!-- Close icon for mobile -->
+                <a href="#" id="close"><i class='bx bx-x'></i></a>
+            </ul>
+        </div>
+
+        <!-- Mobile navigation -->
+        <div id="mobile">
+            <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+            <i id="bar" class='bx bx-menu'></i>
+        </div>
+    </section>
+    <!-- ================= END HEADER ================= -->
+
+
+    <!-- ================= PAGE HEADER ================= -->
+    <section id="page-header" class="about-header">
+        <h2>Your Order</h2>
+    </section>
+    <!-- ================= END PAGE HEADER ================= -->
+
+
+    <!-- ================= CART TABLE ================= -->
+    <section id="cart" class="section-p1">
+
+        <!-- Cart items table -->
+        <table width="100%">
+
+            <!-- Table headings -->
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+
+            <!-- Cart items will be inserted here using JavaScript -->
+            <tbody>
+                <!-- Dynamic cart rows -->
+            </tbody>
+
+        </table>
+    </section>
+    <!-- ================= END CART TABLE ================= -->
+
+
+    <!-- ================= CART TOTAL & COUPON ================= -->
+    <section id="cart-add" class="section-p1">
+
+        <!-- Coupon section -->
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <!-- Cart total summary -->
+        <div id="subtotal">
+            <h3>Cart Total</h3>
+
+            <!-- Price summary table -->
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>₹0</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>₹0</strong></td>
+                </tr>
+            </table>
+
+            <!-- Checkout button -->
+            <button class="normal">Proceed to checkout</button>
+        </div>
+    </section>
+    <!-- ================= END CART TOTAL ================= -->
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="section-p1">
+
+        <!-- Contact information -->
+        <div class="col">
+            <img class="logo" src="./img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Gulshan-e-Iqbal, Karachi</p>
+            <p><strong>Phone:</strong> 03172671982</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+
+            <!-- Social media icons -->
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-pinterest-alt'></i>
+                    <i class='bx bxl-youtube'></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- About links -->
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <!-- Account links -->
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <!-- App install section -->
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="./img/pay/app.jpg" alt="">
+                <img src="./img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="./img/pay/pay.png" alt="">
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>© 2026 - HTML CSS Ecommerce</p>
+        </div>
+    </footer>
+    <!-- ================= END FOOTER ================= -->
+
+
+    <!-- Product data file -->
+    <script src="data/data.js"></script>
+
+    <!-- General JS -->
+    <script src="script.js"></script>
+
+    <!-- Cart functionality -->
+    <script src="js/cart.js"></script>
+
+</body>
+</html>
